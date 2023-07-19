@@ -1,4 +1,7 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
-  layout 'mailer'
+  def agenda_mail(agenda)
+    @agenda = agenda 
+
+    mail( to: @agenda.title, subject: "アジェンダ削除の確認メール")
+  end
 end
