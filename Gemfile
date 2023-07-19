@@ -3,32 +3,28 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.1'
 
-# Core
+
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rails', '6.0.3'
 
-# Middleware
+
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 
-# Frontend
+
 gem 'coderay'
 gem 'jquery-rails'
 gem 'redcarpet', '~> 3.5.1'
 gem 'sass-rails', '~> 5.0'
 gem 'webpacker', '~> 5'
 
-# Backend
+
 gem 'carrierwave'
 gem 'friendly_id', '~> 5.1.0'
 gem 'jbuilder', '~> 2.5'
 gem 'mini_magick', '~> 4.8'
 gem 'seed-fu', '~> 2.3'
-# gem 'rmagick'
-# gem 'redis', '~> 4.0'
-# gem 'bcrypt', '~> 3.1.7'
 
-# Authentication
 gem 'devise'
 
 group :development, :test do
