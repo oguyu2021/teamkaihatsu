@@ -192,6 +192,7 @@ GEM
       rake
     mini_magick (4.11.0)
     mini_mime (1.1.1)
+    mini_portile2 (2.6.1)
     minitest (5.14.4)
     msgpack (1.4.2)
     nenv (0.3.0)
@@ -199,6 +200,9 @@ GEM
       net-ssh (>= 2.6.5, < 7.0.0)
     net-ssh (6.1.0)
     nio4r (2.5.8)
+    nokogiri (1.12.4)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
     nokogiri (1.12.4-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.12.4-x86_64-darwin)
@@ -395,6 +399,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
+  ruby
   x86_64-darwin-19
 
 DEPENDENCIES
@@ -431,6 +436,7 @@ DEPENDENCIES
   rails (= 6.0.3)
   rails-controller-testing
   redcarpet (~> 3.5.1)
+  rexml
   rspec-parameterized
   rspec-rails
   rspec-retry
@@ -452,4 +458,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.3.5
+   2.4.15

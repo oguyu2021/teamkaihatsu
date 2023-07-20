@@ -206,6 +206,7 @@ ja:
   views:
     messages:
       create_agenda: 'アジェンダ作成に成功しました！'
+      delete_agenda: 'アジェンダを削除しました！'
       create_article: '記事作成に成功しました！'
       update_article: '記事更新に成功しました！'
       assigned: 'アサインしました！'
@@ -253,6 +254,7 @@ ja:
       edit_profile: 'プロフィールを編集'
       team_you_belong_to: '所属しているチーム'
       posted_articles: '投稿した記事一覧'
+      leader_only_edit: "リーダーのみ編集できます。" 
     button:
       submit: '投稿'
       edit: '編集'
