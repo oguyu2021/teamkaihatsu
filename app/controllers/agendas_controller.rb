@@ -22,10 +22,12 @@ class AgendasController < ApplicationController
   end
 
   def destroy
-    @agenda.destroy
     if @agenda.user_id == current_user.id || @agenda.team.owner_id == current_user.id
+      @agenda.destroy
       AgendaMailer.agenda_mail(@agenda).deliver
       redirect_to dashboard_url, notice: I18n.t('views.messages.delete_agenda')
+    else
+      redirect_to dashboard_url, alert: I18n.t('views.messages.no_permission')
     end
   end
 
@@ -36,6 +38,6 @@ class AgendasController < ApplicationController
   end
 
   def agenda_params
-    params.fetch(:agenda).permit(:title, :description)
+    params.fetch(:agenda, {}).permit(:title, :description)
   end
 end
